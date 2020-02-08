@@ -168,6 +168,7 @@ public static void main(String[] args) {
         String result = func.apply(1);
         System.out.println(result);
         // 构造函数引用，多个参数
+        //BiFunction<Pram1,Pram2,Return>
         BiFunction<String, Integer, User> biFunction = User::new;
         User user1 = biFunction.apply("asdasd", 28);
         System.out.println(user1.toString());
