@@ -214,3 +214,10 @@ class User {
     }
 ```
 
+## 返回函数式接口
+```java
+private static <T> BinaryOperator<T> throwingMerger() {
+        return (u,v) -> { throw new IllegalStateException(String.format("Duplicate key %s", u)); };
+    }
+```
+
